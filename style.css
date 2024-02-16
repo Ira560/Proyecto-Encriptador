@@ -1,0 +1,302 @@
+body {
+    background: radial-gradient(circle at center, #4ea8de, #7400b8);
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    height: 50px;
+}
+
+img {
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.seccion-principal {
+    padding-left: 100px;
+}
+
+.seccion-secundaria {
+    position: relative;
+}
+
+.textarea1 {
+    width: 500px;
+    height: 300px;
+    display: block;
+    background: #5e60ce;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3), -5px -5px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    resize: none;
+    top: 20%;
+    padding: 10px 10px;
+}
+
+.textarea1::placeholder {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.textarea1:focus {
+    outline: none;
+    padding: 10px 10px;
+}
+
+.textarea2 {
+    width: 290px;
+    height: 535px;
+    z-index: 1;
+    background: #5e60ce;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3), -5px -5px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 15px;
+    resize:none;
+    box-sizing: border-box;
+}
+
+.textarea2:focus {
+    outline: none;
+}
+
+.muñeco-textarea {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.texto-textarea {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    padding-top: 340px;
+}
+
+.info {
+    display: block;
+    font-size: 15px;
+    display: block;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    margin-top: 60px;
+}
+
+.boton-encriptar, .boton-desencriptar {
+    background: #7400b8;
+    display: inline;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 80px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.boton-encriptar:hover {
+    cursor: pointer;
+    background: white;
+    color: #7400b8;
+}
+
+.boton-desencriptar:hover {
+    cursor: pointer;
+    background: white;
+    color: #7400b8;
+}
+
+#boton-copiar {
+    display: none;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #7400b8;
+    top: 90%;
+    position: absolute;
+    z-index: 2;
+    left: 9%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+#boton-copiar:hover {
+    cursor: pointer;
+    background: #7400b8;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        background: #5e60ce;
+        height: 100vh;
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seccion-principal {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 3em;
+    }
+
+    .seccion-secundaria {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .textarea1 {
+        width: 13em;
+        height: 14em;
+        background: #7400b8;
+    }
+
+    .boton-encriptar, .boton-desencriptar {
+        margin-bottom: 1em;
+    }
+
+    .textarea2 {
+        width: 18em;
+        height: 6em;
+        margin-top: 1em;
+        z-index: 1;
+        background: #7400b8;
+    }
+
+    .muñeco-textarea {
+        display: none;
+    }
+
+    .texto-textarea {
+        z-index: 2;
+        padding: 0;
+        height: 5em;
+        margin-top: 2em;
+    }
+
+    #boton-copiar {
+        z-index: 2;
+        left: 5em;
+        margin-top: -2em;
+    }
+
+    footer {
+        margin-top: 10px;
+        position: static;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 1025px) {
+    body {
+    background: linear-gradient(to top, #4ea8de, #7400b8);
+    width: 100vw;
+    height: 100vh;
+    }
+
+   main {
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   .seccion-principal {
+    padding: 0;
+    margin-top: 3em;
+   }
+
+   .seccion-secundaria {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 7em;
+    z-index: 1;
+   }
+
+   .textarea1 {
+    width: 25em;
+    height: 18em;
+   }
+
+   .textarea2 {
+    width: 35em;
+    height: 10em;
+   }
+
+   .boton-encriptar, .boton-desencriptar {
+    margin-left: 4.5em;
+   }
+
+   .muñeco-textarea {
+    display: none;
+   }
+
+   .texto-textarea {
+    z-index: 2;
+    padding: 0;
+    height: 6em;
+   }
+
+   #boton-copiar {
+    position: absolute;
+    left: 6em;
+    width: 40em;
+    height: 3em;
+    margin-top: 0;
+    margin-top: -3em;
+   }
+}
+
